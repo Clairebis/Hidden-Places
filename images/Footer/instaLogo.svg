@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="instaLogo" transform="translate(-126 -6)">
+    <rect id="Rectangle_9" data-name="Rectangle 9" width="30" height="30" rx="5" transform="translate(126 6)" fill="#fffefe"/>
+    <g id="instagram" transform="translate(119 -1)">
+      <rect id="Rectangle_274" data-name="Rectangle 274" width="30" height="30" transform="translate(7 7)" fill="none"/>
+      <ellipse id="Ellipse_14" data-name="Ellipse 14" cx="3.834" cy="3.834" rx="3.834" ry="3.834" transform="translate(18.176 18.176)"/>
+      <path id="Path_25" data-name="Path 25" d="M45.126,28H34.66A6.66,6.66,0,0,0,28,34.66V45.126a6.66,6.66,0,0,0,6.66,6.66H45.126a6.66,6.66,0,0,0,6.66-6.66V34.66A6.66,6.66,0,0,0,45.126,28ZM39.893,45.6A5.709,5.709,0,1,1,45.6,39.893,5.709,5.709,0,0,1,39.893,45.6Zm6.184-10.466A1.427,1.427,0,1,1,47.5,33.709,1.427,1.427,0,0,1,46.077,35.136Z" transform="translate(-17.918 -17.918)"/>
+    </g>
+  </g>
+</svg>

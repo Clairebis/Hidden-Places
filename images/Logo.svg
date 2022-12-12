@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="123" viewBox="0 0 150 123">
+  <defs>
+    <pattern id="pattern" width="1" height="1" patternTransform="matrix(1, 0, 0, -1, 0, 68)" viewBox="0 0 34 34">
+      <use preserveAspectRatio="none" xlink:href="#image"/>
+    </pattern>
+    <image id="image" preserveAspectRatio="none" width="34" height="34" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEyUlEQVR4nO1baYhOURh+7WQtWSNbihmNpZBICIP8UKaxzKAYyw8lIqbILsoyZhoU0Qx++CFrDGZolPyxhpKlZC/7vi/v23lP51q+89373XPO/eR76qmv73vue55z7znnnvOe8wGkkEIKKbhBC2QeshR5HvkE+ZlJn8/xb1OQzSPyaAWDkEeQX5E/fJK0h5ED3Ns1h47IY6Aq9Q15FpmPHIxMRzZmpvN3C5BnWCuvo5vXwbH30JiIfAuiAh+RBciWAa5vhlyL/MAxXiPHG/ZoDUtAPb2DyDYhYrVG7uNY35ELw5qzjcWgzK5GVjUQswpyPqhukW8gphVkg3ryeRbiTwJxY4mjLMQPhVbIVyAqv8ZiOSu4jBcgXqtJgz0gjFVA/GbfBcSgeBXEQPmWPxfwbzpQd5Bvll0h/BpFGoj+Seyh0dVEFsOvr7i/vf+LWBsLnZFfOE68G+YEW0GYL9FoqEIVoCp6FJmDzGDmwq9zhnLQ34RtrNsS0nto1ALV9/todMWseYccrdFlsYa0hRpdT1Bjge5GWccANvIYYvd9aqZyGqyrvEQWqO6QHkNDY8Fd1vXzb9c88tnEVo2mAFSz94syvma9RrOZNfMDxDWOEjYxU6O5xpogU9kcvuaKRjODNTsCxDUO+aR0E5M3rMkIELcbqDVALIwEtViKDKfZRKZG85o13QLE7c7XvNJoBrLmdIC4xnGcTeRoNNd8aH5HLsTvAnLqfSxAXOPYxSbmajRyECwLEFfeWN0gOIs1uwPENY5FbGKTRuN9DWb5iCmfLF2TptEVsm6pL6eW0J9N3ImjKwI1EdLdhGxQE6GNcWLeYN0IP0ZtoTqI2RgZiTVpIdBsrRzUVJe6A/XzrswJoJo98QSyhiZeZ1DZpgahamAAciW4LI6ObgI1W11ylH6jJ6+rPGE56/cn7NoghoIw8xRZz4eeWgoNbjTCv2HS53Wg7/MS9ZHPucxhCfi1Asrpk6HZDsqay2VdArEmSAqMAWHqHthdndHq8wGXlW2xnMCoBmpUnmyxnKlcxm0uM6kwDYS562AmG/w7vDd5moX4oeFtnn7W/UEhJ0iPkLUtxDeCeSBMXgDzA5QcaOcZjmsU3lfUYINxMznmS2RDg3GtQObuyw3GPMUxlxuMaQ202ys3RnWJUr/oxbFoo/SfOTcgFz97DcTaz7GKDMRyBtrVpZMftI+nWyTFQycQGyC0EdI2vC232AniyW0PEUMmXUuNOHIMWrLS06OWkMgZAWpFn0C0oqTYAksEdECCnuCGBK6VGZ8DRh05Rm9QmaAmAa7zvkn6WvDlFJUQPHcnEx6VVhw5BuXsqDLPQMwU46EuiOQKXTPcoi+noIORVKE5PrQy4XEZkijhERbjQFTqPugTJt4V5VgHvpyB1vI3QVRsikbnTXhUd+DLKeRu7i34ezbHm/CY7tCXM1Dzfgixd4hkwoMOW9Rx6Msp6CwwVfIi/DnAyYRHpAcebIN2ceRO0hDP9zLhQdvhjSLw5RSrQFT2pOc7mfBYGYkjx2iKfA8qYeJNeCTV6U+boO10qjSdBJcJj+JIHTlGO1CnPWXCo32kjiIAneyQu8JJc+7XJejUmDz+3j1iL5GB/hh1KGoTUaIfRHzUNYUUUvi/8RPyV2W5tsL9gAAAAABJRU5ErkJggg=="/>
+  </defs>
+  <g id="Logo" transform="translate(-49)">
+    <use id="Bottom_location_marker" data-name="Bottom location marker" transform="translate(109 57)" xlink:href="#image"/>
+    <rect id="Top_location_marker" data-name="Top location marker" width="34" height="34" rx="17" transform="translate(109 16)" fill="url(#pattern)"/>
+    <text id="H" transform="translate(164 89)" font-size="102" font-family="GoudyOldStyleT-Regular, Goudy Old Style" letter-spacing="0.01em"><tspan x="-78.094" y="0">H</tspan></text>
+    <text id="Hidden_Places" data-name="Hidden Places" transform="translate(199 117)" font-size="23" font-family="Roboto-Regular, Roboto" letter-spacing="0.01em"><tspan x="-149.935" y="0">Hidden Places</tspan></text>
+  </g>
+</svg>
