@@ -56,25 +56,76 @@
                     <label for="ideaTerms">Agree to how we use your data</label><br>
                     <input input type="checkbox" id="ideaTerms" name="ideaTerms" value="checked" required><br>
                 </div>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" id="submitIdea">
             </form>  
     </section>
+
+    <!--Thanks for submitting idea-->
+
+  <div id="myModal" class="modal">
+    <section class="modalMain">
+        <h1>Success</h1>
+        <img src="images/Checkmark.svg" alt="Check mark">
+        <p>We appreciate your input and look 
+            forward to reviewing your 
+            suggested Hidden Place.</p>
+            
+        <p>Keep a look out for new content. 
+            We'll be in touch if we need 
+            any more information.</p>
+        <a href="index.html">
+            <div class="button">
+            Home
+            </div>
+        </a>    
+    </section>
+  </div>
     
     <section class="newsletter">
         <h2>Stay informed</h2>
         <p>Sign up for our Newsletter and be 
             notified when we share details 
             of a new hidden place</p>
-        <form>
-            <input type="text" id="name" name="name" placeholder="Name" required><br>
-            <input type="text" id="email" name="email" placeholder="Email" required><br>
+        <form class="newsletterForm">
+            <div class="formValidataion">
+                    <input type="text" id="name" name="name" placeholder="Name" required><br>
+                    <p>Error Message</p>
+            </div>
+            <div class="formValidation">
+                <input type="email" id="email" name="email" placeholder="Email" required><br>
+                <p>Error Message</p>
+            </div>
             <div class="terms">
                 <label for="terms">Agree to how we use your data</label><br>
-                <input input type="checkbox" id="terms" name="terms" value="checked" required><br>
+                <div class="formValidation">
+                    <input input type="checkbox" id="terms" name="terms" value="checked" required><br>
+                    <p>Error Message</p>
+                </div>
             </div>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" id="subscribeNewsletter">
         </form>  
     </section>
+
+    <!--newsletter thanks for subscribing-->
+
+<div id="myModal2" class="modal">
+    <section class="modalMain">
+        <h1>Success</h1>
+        <img src="images/Checkmark.svg" alt="Check mark">
+        <p>You have successfully signed 
+            up for our newsletter and will 
+            receive an email whenever we 
+            share details of a new 
+            hidden place.</p>
+        <a href="index.html">
+            <div class="button">
+            Home
+            </div>
+        </a>    
+    </section>
+</div>
+
+<!--footer-->
     
     <footer class="footer">
         <div class="facebook">
