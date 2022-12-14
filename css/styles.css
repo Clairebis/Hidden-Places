@@ -460,12 +460,12 @@ transition: 0.3s;
 .mainVideoContainer{
 padding-bottom: 0;
 margin-bottom: 0;
-  height: 71vh;
+  height: 61vh;
 }
 
   #mainVideo {
     width: 100vw;
-    height: 93vh;
+    height: 83vh;
     object-fit: cover;
     position: absolute;
     top: 13vh;

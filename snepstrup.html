@@ -165,25 +165,30 @@
     <p>Share your suggestions of places to 
         discover in and around Hørning</p>
     <a href="contact.html">
-        <div class="button">
+        <div class="button contactButton">
             Contact us
         </div>
     </a>
 </section>
 
-<section class="newsletter">
+<section class="newsletter lightGreen">
     <h2>Stay informed</h2>
     <p>Sign up for our Newsletter and be 
         notified when we share details 
         of a new hidden place</p>
-    <form>
-        <input type="text" id="name" name="name" placeholder="Name" required><br>
-        <input type="text" id="email" name="email" placeholder="Email" required><br>
-        <div class="terms">
-            <label for="terms">Agree to how we use your data</label><br>
-            <input input type="checkbox" id="terms" name="terms" value="checked" required><br>
+    
+     <form class="formNewsletter">
+        <input type="text" id="name" name="name" placeholder="Name" required class="newsletterText"><br>
+        <div class="emailAndTerms">
+            <input type="email" id="email" name="email" placeholder="Email" required class="newsletterText"><br>
+            <div class="terms">
+                <label for="terms" class="termsText newsletterRelative" >Agree to how we use your data 
+                    <input type="checkbox" id="terms" name="terms" value="checked" required class="oldcheckbox"><br>
+                </label><br>
+                <span class="checkbox"></span> 
+            </div>
         </div>
-    <input type="submit" value="Submit" class="button">
+    <input type="submit" value="Submit" class="button submitButton" id="subscribeNewsletterMain">
     </form>  
 </section>
 
@@ -209,20 +214,24 @@
 <!--footer-->
 
 <footer class="footer darkGreen">
-    <div class="facebook">
-        <img src="images/Footer/fbLogo.svg" alt="Facebook logo">
-        Facebook
+    <div class="footerLeft">
+        <div class="facebook">
+            <img src="images/Footer/fbLogo.svg" alt="Facebook logo">
+            Facebook
+        </div><br>
+        <div class="insta">
+            <img src="images/Footer/instaLogo.svg" alt="Instagram logo">
+            Instagram
+        </div><br>
+        <div class="Snapchat">
+            <img src="images/Footer/snapchatLogo.svg" alt="Snapchat logo">
+             Snapchat
+        </div><br>
+        <p>mail@hiddenplaces.com </p>
     </div>
-    <div class="insta">
-        <img src="images/Footer/instaLogo.svg" alt="Instagram logo">
-        Instagram
+    <div class="footerRight">
+        <p class="copyright">&copy; 2022 Hidden Places</p>
     </div>
-    <div class="Snapchat">
-        <img src="images/Footer/snapchatLogo.svg" alt="Snapchat logo">
-        Snapchat
-    </div>
-    <p>mail@hiddenplaces.com</p>
-    <p>&copy; 2022 Hidden Places</p>
 </footer>
 
 

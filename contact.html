@@ -88,30 +88,26 @@
     </section>
   </div>
     
-    <section class="newsletter">
-        <h2>Stay informed</h2>
-        <p>Sign up for our Newsletter and be 
-            notified when we share details 
-            of a new hidden place</p>
-        <form class="newsletterForm">
-            <div class="formValidataion">
-                    <input type="text" id="name" name="name" placeholder="Name" required><br>
-                    <p>Error Message</p>
-            </div>
-            <div class="formValidation">
-                <input type="email" id="email" name="email" placeholder="Email" required><br>
-                <p>Error Message</p>
-            </div>
+  <section class="newsletter">
+    <h2>Stay informed</h2>
+    <p>Sign up for our Newsletter and be 
+        notified when we share details 
+        of a new hidden place</p>
+    
+     <form class="formNewsletter">
+        <input type="text" id="name" name="name" placeholder="Name" required class="newsletterText"><br>
+        <div class="emailAndTerms">
+            <input type="email" id="email" name="email" placeholder="Email" required class="newsletterText"><br>
             <div class="terms">
-                <label for="terms">Agree to how we use your data</label><br>
-                <div class="formValidation">
-                    <input input type="checkbox" id="terms" name="terms" value="checked" required><br>
-                    <p>Error Message</p>
-                </div>
+                <label for="terms" class="termsText newsletterRelative" >Agree to how we use your data 
+                    <input type="checkbox" id="terms" name="terms" value="checked" required class="oldcheckbox"><br>
+                </label><br>
+                <span class="checkbox"></span> 
             </div>
-        <input type="submit" value="Submit" id="subscribeNewsletter" class="button">
-        </form>  
-    </section>
+        </div>
+    <input type="submit" value="Submit" class="button submitButton" id="subscribeNewsletterMain">
+    </form>  
+</section>
 
     <!--newsletter thanks for subscribing-->
 
@@ -134,22 +130,26 @@
 
 <!--footer-->
     
-    <footer class="footer darkGreen">
+<footer class="footer darkGreen">
+    <div class="footerLeft">
         <div class="facebook">
             <img src="images/Footer/fbLogo.svg" alt="Facebook logo">
             Facebook
-        </div>
+        </div><br>
         <div class="insta">
             <img src="images/Footer/instaLogo.svg" alt="Instagram logo">
             Instagram
-        </div>
+        </div><br>
         <div class="Snapchat">
             <img src="images/Footer/snapchatLogo.svg" alt="Snapchat logo">
-            Snapchat
-        </div>
-        <p>mail@hiddenplaces.com</p>
-        <p>&copy; 2022 Hidden Places</p>
-    </footer>
+             Snapchat
+        </div><br>
+        <p>mail@hiddenplaces.com </p>
+    </div>
+    <div class="footerRight">
+        <p class="copyright">&copy; 2022 Hidden Places</p>
+    </div>
+</footer>
   
     <script src="js/contact.js"></script>
 </body>
