@@ -33,30 +33,31 @@
             </div>
             </div>
 
-<section class="subVideoContainer">
-    <video muted loop class="subVideo" id="snepVid">
+<section class="subMain">
+    <video loop class="subVideo" id="snepVid">
         <source src="images/Snep/Video/Snepstrup2.mp4" type="video/mp4"  alt="Video of Snepsrup Præstegård">
-      </video>
-</section>
-
-<section class="hiddenPlaces darkGreen">
-    <h1>SNEPSTRUP PRÆSTEGÅRD</h1>
-    <div class="description">
-        <p>Discover unusual wooden 
+    </video>
+    <div class="hiddenPlaces darkGreen subHiddenPlaces">
+        <h1>SNEPSTRUP PRÆSTEGÅRD</h1>
+        <div class="description subDescription">
+            <p>Discover unusual wooden 
             sculptures, information 
             boards and a 100m long 
             wooden walkway.</p>
             
-        <p>Experience nature while
+            <p>Experience nature while
             learning more about
             the old Rectory.</p>
+        </div>
     </div>
 </section>
 
+<img src="images/211687_down_arrow_icon.svg" alt="down arrow" class="downArrow">
+
 <section class="destinationOverview lightGreen">
-    <h1>DESTINATION OVERVIEW</h1>
+    <h1 class="destinationText">DESTINATION OVERVIEW</h1>
     <div class="cards">
-        <div class="descriptionCard">
+        <div class="descriptionCard destinationCard">
              <p> The Sneptrup Rectory from 1747, with 
             its thatched roof and timbering still 
             stands at the location.</p>
@@ -65,8 +66,8 @@
             building of the Rectory.</p>
         </div>
 
-        <div class="facilitiesCard">
-            <h2>Facilities</h2>
+        <div class="facilitiesCard destinationCard">
+            <h3 class="facilitiesHeading">Facilities</h3>
             <ul>
                 <li>Parking at the old Rectory</li>
                 <li>Covered lunch area</li>
@@ -76,7 +77,7 @@
             </ul>
         </div>
 
-        <div class="mapCard">
+        <div class="mapCard destinationCard">
             <p>Sneptrupvej 4, 8660 Skanderborg</p>
             <div class="subMapContainer">
 
@@ -84,7 +85,7 @@
             <p>55.98363, 9.87279</p>
         </div>
 
-        <div class="weatherCard">
+        <div class="weatherCard destinationCard">
             <p> Current temperature </p>
             <p> Feels like </p>
             <p> Wind speed </p>
@@ -115,18 +116,18 @@
 </section>
 
 <section class="testimonials lightGreen">
-    <h1>TESTIMONIALS</h1>
-    <div class="testimonial1">
+    <h1 class="testimonialsHeader">TESTIMONIALS</h1>
+    <div class="testimonial1 testimonial">
         <h2>JANNE, HØRNING</h2>
         <p>A discovery around every corner!
         The sculptures were so interesting.</p>
     </div>
-    <div class="testimonial2">
+    <div class="testimonial2 testimonial">
         <h2>SOPHIE, SKANDERBORG</h2>
         <p>A historical gem. The rectory was 
             well preserved.</p>
     </div>
-    <div class="testimonial3">
+    <div class="testimonial3 testimonial">
         <h2>MORTON, STILLING</h2>
         <p>We loved exploring this unusual and
             beautiful area.</p>
@@ -136,25 +137,31 @@
 <section class="yourNextAdventure">
     <h1>YOUR NEXT ADVENTURE</h1>
     
-    <div class="adventureOption">
-        <div class="imageContainer">
-            <img src="images/Jeksen/jeksenDalenMain.jpg" alt="Photo of bridge at Jeksen Dalen">
+    <div class="options">    
+        <div class="adventureOption">
+            <a href="jeksen.html" class="adventureLink">
+            <div class="imageContainer">
+                <img src="images/Jeksen/jeksenDalenMain.jpg" alt="Photo of bridge at Jeksen Dalen" class="chooseImage">
+            </div>
+            <h2>Jeksen Dalen</h2>
+            <p class="shortDescription">Explore the forest and 
+                hilly landscape around
+                Kollens Mølle</p>
+            </a>
         </div>
-        <h2>Jeksen Dalen</h2>
-        <p>Explore the forest and 
-            hilly landscape around
-            Kollens Mølle</p>
-    </div>
-
-    <div class="adventureOption">
-        <div class="imageContainer">
-            <img src="images/Mosen/mosehusetMain.jpg" alt="Photo of bridge at Naturcenter Mosehuset">
+    
+        <div class="adventureOption">
+            <a href="mosen.html" class="adventureLink">
+            <div class="imageContainer">
+                <img src="images/Mosen/mosehusetMain.jpg" alt="Photo of bridge at Naturcenter Mosehuset" class="chooseImage">
+            </div>
+            <h2>Naturcenter Mosehuset</h2>
+            <p class="shortDescription">An experience in nature. Discover 
+                a play area, a short forest walk, 
+                a camping area and more</p>
+            </a>
         </div>
-        <h2>Naturcenter Mosehuset</h2>
-        <p>An experience in nature. Discover 
-            a play area, a short forest walk, 
-            a camping area and more</p>
-    </div>
+    </div> 
 </section>
 
 <section class="ideas lightGreen">
@@ -168,7 +175,7 @@
     </a>
 </section>
 
-<section class="newsletter lightGreen">
+<section class="newsletter">
     <h2>Stay informed</h2>
     <p>Sign up for our Newsletter and be 
         notified when we share details 
