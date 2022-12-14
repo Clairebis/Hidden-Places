@@ -51,6 +51,7 @@
   padding-bottom: 0.4vh;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .contactButton{
