@@ -12,82 +12,93 @@
 
 <body>
 
-<header class="bigNav">
-    <a href="index.html"><img class="logo" src="images/Logo.svg" alt="Hidden Places logo"></a>
-    <nav>
-        <a href="contact.html"><h3>Contact</h3></a>
-        <a href="snepstrup.html"><h3>Snepstrup Præstegård</h3></a>
-        <a href="jeksen.html"><h3>Jeksen Dalen</h3></a>
-        <a href="mosen.html"><h3>Naturcenter Mosehuset</h3></a>
-    </nav>
-    <h3><span>EN |</span><a href="404.html"><span> DK</span></a></h3>
-</header>
-    
-<div class="mobileNav">
-    <a href="index.html"><img class="logo" src="images/Logo.svg" alt="Hidden Places logo"></a>
-    <a href="mobileNav.html" class="burgerGroup">
-        <h3>MENU</h3>
-        <img class="burger" src="images/burgerIcon.svg" alt="Burger Menu">
-    </a>
+<div class="navWrapper">    
+<nav class="nav bigNav">
+        <a href="index.html"><img class="logo" src="images/Logo.svg" alt="Hidden Places logo"></a>
+        <a href="contact.html" class="bigNav"><h3 class="bigNav">Contact</h3></a>
+        <a href="snepstrup.html" class="bigNav"><h3 class="bigNav">Snepstrup Præstegård</h3></a>
+        <a href="jeksen.html" class="bigNav"><h3 class="bigNav">Jeksen Dalen</h3></a>
+        <a href="mosen.html" class="bigNav"><h3 class="bigNav">Naturcenter Mosehuset</h3></a>
+        <h3 class="bigNav language"><span>EN |</span><a href="404.html"><span class="dk"> DK</span></a></h3>
+</nav>
 </div>
-
+    
 
 <section class="mainVideoContainer">
     <video autoplay muted loop id="mainVideo">
         <source src="images/Main.mp4" type="video/mp4" alt="Video showing 3 hidden places in Hørning area">
       </video>
     <div class="overlay">
-        <h1>EXPLORE</h1>
-        <H2>HØRNING</H2>
+        <div class="overlayText">
+            <h1 class="exploreText">EXPLORE</h1>
+            <H2 class="hørningText">HØRNING</H2>
+        </div>
     </div>
 </section>
 
-<section class="hiddenPlaces">
+<div class="mobileNavWrapper">
+    <div class="mobileNav">
+        <a href="index.html"><img class="logo" src="images/Logo.svg" alt="Hidden Places logo"></a>
+        <a href="mobileNav.html" class="burgerGroup">
+            <h3>MENU</h3>
+            <img class="burger" src="images/burgerIcon.svg" alt="Burger Menu">
+        </a>
+    </div>
+    </div>
+
+<section class="hiddenPlaces darkGreen">
     <h1>HIDDEN PLACES</h1>
-    <div class="descriptionCard">
+    <div class="description">
         <p>Undiscovered. Off the 
-            beaten track. Waiting for 
+            beaten track. <br>Waiting for 
             you to explore.</p>
             
-            <p>Get to know the area and 
-            experience new adventures. 
-            All the information is 
+            <p>Get to know the area and <br>
+            experience new adventures.<br> 
+            All the information is <br>
             available at your fingertips.</p>
     </div>
 </section>
 
-<section class="chooseYourAdventure">
+<section class="chooseYourAdventure lightGreen">
     <h1>CHOOSE YOUR ADVENTURE</h1>
+    <div class="options">
     <div class="adventureOption">
-        <div class="imageContainer">
-            <img src="images/Snep/snepstrupPræstegårdMain.jpg" alt="Photo of Snepstrup Præstegård building">
+        <a href="snepstrup.html" class="adventureLink">
+            <div class="imageContainer">
+            <img src="images/Snep/snepstrupPræstegårdMain.jpg" alt="Photo of Snepstrup Præstegård building" class="chooseImage">
         </div>
         <h2>Snepstrup Præstegård</h2>
-        <p>A 5 km long trail, including
+        <p class="shortDescription">A 5 km long trail, including
             wooden figures related 
             to the Old Testement</p>
+        </a>
     </div>
 
     <div class="adventureOption">
+        <a href="jeksen.html" class="adventureLink">
         <div class="imageContainer">
-            <img src="images/Jeksen/jeksenDalenMain.jpg" alt="Photo of bridge at Jeksen Dalen">
+            <img src="images/Jeksen/jeksenDalenMain.jpg" alt="Photo of bridge at Jeksen Dalen" class="chooseImage">
         </div>
         <h2>Jeksen Dalen</h2>
-        <p>Explore the forest and 
+        <p class="shortDescription">Explore the forest and 
             hilly landscape around
             Kollens Mølle</p>
+        </a>
     </div>
 
     <div class="adventureOption">
+        <a href="mosen.html" class="adventureLink">
         <div class="imageContainer">
-            <img src="images/Mosen/mosehusetMain.jpg" alt="Photo of bridge at Naturcenter Mosehuset">
+            <img src="images/Mosen/mosehusetMain.jpg" alt="Photo of bridge at Naturcenter Mosehuset" class="chooseImage">
         </div>
         <h2>Naturcenter Mosehuset</h2>
-        <p>An experience in nature. Discover 
+        <p class="shortDescription">An experience in nature. Discover 
             a play area, a short forest walk, 
             a camping area and more</p>
+        </a>
     </div>
-
+</div> 
     <div class="bigMapContainer">
 
     </div>
@@ -99,31 +110,38 @@
     <p>Share your suggestions of places to 
         discover in and around Hørning</p>
     <a href="contact.html">
-        <div class="button">
+        <div class="button contactButton">
             Contact us
         </div>
     </a>
 </section>
 
-<section class="newsletter">
+<section class="newsletter lightGreen">
     <h2>Stay informed</h2>
     <p>Sign up for our Newsletter and be 
         notified when we share details 
         of a new hidden place</p>
-    <form>
-        <input type="text" id="name" name="name" placeholder="Name" required><br>
-        <input type="text" id="email" name="email" placeholder="Email" required><br>
-        <div class="terms">
-            <label for="terms">Agree to how we use your data</label><br>
-            <input input type="checkbox" id="terms" name="terms" value="checked" required><br>
+    
+     <form class="formNewsletter">
+        <input type="text" id="name" name="name" placeholder="Name" required class="newsletterText"><br>
+        <div class="emailAndTerms">
+            <input type="email" id="email" name="email" placeholder="Email" required class="newsletterText"><br>
+            <div class="terms">
+                <label for="terms" class="termsText newsletterRelative" >Agree to how we use your data 
+                    <input type="checkbox" id="terms" name="terms" value="checked" required class="oldcheckbox"><br>
+                </label><br>
+                <span class="checkbox"></span> 
+            </div>
         </div>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" class="button submitButton" id="subscribeNewsletterMain">
     </form>  
+    
+    
 </section>
 
 <!--newsletter thanks for subscribing-->
 
-<div id="myModal" class="modal">
+<div id="myModal2Main" class="modal">
     <section class="main">
         <h1>Success</h1>
         <img src="images/Checkmark.svg" alt="Check mark">
@@ -142,21 +160,25 @@
 
 <!--footer-->
 
-<footer class="footer">
-    <div class="facebook">
-        <img src="images/Footer/fbLogo.svg" alt="Facebook logo">
-        Facebook
+<footer class="footer darkGreen">
+    <div class="footerLeft">
+        <div class="facebook">
+            <img src="images/Footer/fbLogo.svg" alt="Facebook logo">
+            Facebook
+        </div><br>
+        <div class="insta">
+            <img src="images/Footer/instaLogo.svg" alt="Instagram logo">
+            Instagram
+        </div><br>
+        <div class="Snapchat">
+            <img src="images/Footer/snapchatLogo.svg" alt="Snapchat logo">
+             Snapchat
+        </div><br>
+        <p>mail@hiddenplaces.com </p>
     </div>
-    <div class="insta">
-        <img src="images/Footer/instaLogo.svg" alt="Instagram logo">
-        Instagram
+    <div class="footerRight">
+        <p class="copyright">&copy; 2022 Hidden Places</p>
     </div>
-    <div class="Snapchat">
-        <img src="images/Footer/snapchatLogo.svg" alt="Snapchat logo">
-        Snapchat
-    </div>
-    <p>mail@hiddenplaces.com</p>
-    <p>&copy; 2022 Hidden Places</p>
 </footer>
 
 

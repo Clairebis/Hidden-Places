@@ -12,20 +12,26 @@
 
 <body>
 
-<nav class="nav">
-        <a href="index.html"><img class="logo" src="images/Logo.svg" alt="Hidden Places logo"></a>
-        <a href="contact.html" class="bigNav"><h3>Contact</h3></a>
-        <a href="snepstrup.html" class="bigNav"><h3>Snepstrup Præstegård</h3></a>
-        <a href="jeksen.html" class="bigNav"><h3>Jeksen Dalen</h3></a>
-        <a href="mosen.html" class="bigNav"><h3>Naturcenter Mosehuset</h3></a>
-        <h3 class="bigNav"><span>EN |</span><a href="404.html"><span> DK</span></a></h3>
-        <div class="mobileNav">
-            <a href="mobileNav.html">
-            <h3>MENU</h3>
-            <img class="burger" src="images/burgerIcon.svg" alt="Burger Menu"></a>
+    <div class="navWrapper">    
+        <nav class="nav bigNav">
+                <a href="index.html"><img class="logo" src="images/Logo.svg" alt="Hidden Places logo"></a>
+                <a href="contact.html" class="bigNav"><h3 class="bigNav">Contact</h3></a>
+                <a href="snepstrup.html" class="bigNav"><h3 class="bigNav">Snepstrup Præstegård</h3></a>
+                <a href="jeksen.html" class="bigNav"><h3 class="bigNav">Jeksen Dalen</h3></a>
+                <a href="mosen.html" class="bigNav"><h3 class="bigNav">Naturcenter Mosehuset</h3></a>
+                <h3 class="bigNav language"><span>EN |</span><a href="404.html"><span class="dk"> DK</span></a></h3>
+        </nav>
         </div>
-</nav>
 
+        <div class="mobileNavWrapper">
+            <div class="mobileNav">
+                <a href="index.html"><img class="logo" src="images/Logo.svg" alt="Hidden Places logo"></a>
+                <a href="mobileNav.html" class="burgerGroup">
+                    <h3>MENU</h3>
+                    <img class="burger" src="images/burgerIcon.svg" alt="Burger Menu">
+                </a>
+            </div>
+            </div>
 
 <section class="subVideoContainer">
     <video muted loop class="subVideo" id="snepVid">
@@ -36,9 +42,9 @@
       </div>
 </section>
 
-<section class="hiddenPlaces">
+<section class="hiddenPlaces darkGreen">
     <h1>SNEPSTRUP PRÆSTEGÅRD</h1>
-    <div class="descriptionCard">
+    <div class="description">
         <p>Discover unusual wooden 
             sculptures, information 
             boards and a 100m long 
@@ -50,7 +56,7 @@
     </div>
 </section>
 
-<section class="destinationOverview">
+<section class="destinationOverview lightGreen">
     <h1>DESTINATION OVERVIEW</h1>
     <div class="cards">
         <div class="descriptionCard">
@@ -111,7 +117,7 @@
     </div>
 </section>
 
-<section class="testimonials">
+<section class="testimonials lightGreen">
     <h1>TESTIMONIALS</h1>
     <div class="testimonial1">
         <h2>JANNE, HØRNING</h2>
@@ -154,7 +160,7 @@
     </div>
 </section>
 
-<section class="ideas">
+<section class="ideas lightGreen">
     <h2>We create adventures based on your input</h2>
     <p>Share your suggestions of places to 
         discover in and around Hørning</p>
@@ -177,7 +183,7 @@
             <label for="terms">Agree to how we use your data</label><br>
             <input input type="checkbox" id="terms" name="terms" value="checked" required><br>
         </div>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" class="button">
     </form>  
 </section>
 
@@ -202,7 +208,7 @@
 
 <!--footer-->
 
-<footer class="footer">
+<footer class="footer darkGreen">
     <div class="facebook">
         <img src="images/Footer/fbLogo.svg" alt="Facebook logo">
         Facebook
