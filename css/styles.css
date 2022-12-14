@@ -5,7 +5,7 @@
     --black: #000000;
     --white: #ffffff;
     --errorColour:#f00e0e;
-    --bodyFont: "Roboto";
+    --bodyFont: "Roboto", Arial, Helvetica, sans-serif;
     --testimonialFont: "MV Boli";
     
     --font-size-heading: 2.9vw;
@@ -64,6 +64,10 @@
 }
 
 .bigNav {
+  display: none;
+}
+
+.lockedBig {
   display: none;
 }
 
@@ -242,6 +246,23 @@ margin:auto;
   align-items: center;
 }
 
+.ideasForm {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+}
+
+.ideaTermsAndSubmit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#submitIdea {
+  margin-top: 2vh;
+}
+
 /*newsletter*/
 .newsletter {
   padding-top: 10vh;
@@ -375,10 +396,52 @@ transition: 0.3s;
     height: 60%;
   }
 
+/*contact*/
+.description{
+  background-color: var(--lightRed);
+  color: var(--black);
+  width: 60%;
+  margin: auto;
+  height: 45vh;
+  justify-content: center;
+  padding: 2vw;
+  border-radius: 15px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3vh;
+}
 
+#hiddenPlaceMain {
+  margin-top: 0;
+  padding-top: 10vh;
+}
+
+/*404*/
+.errorMain {
+  background-color: var(--lightGreen);
+}
 
 .padlockImage {
   width: 100%;
+}
+
+.errorRight{
+background-color: var(--lightGreen);
+font-family: var(--bodyFont);
+margin-left: 2vw;
+padding-top: 3vh;
+padding-bottom: 7vh;
+}
+
+.errorButton{
+  margin-left: 30vw;
+}
+
+.lockedMobile {
+  font-family: var(--bodyFont);
+  text-align: center;
+  padding-top: 10vh;
 }
 
 
@@ -525,7 +588,7 @@ margin-bottom: 0;
 /*Choose your adventure*/
 .chooseYourAdventure {
   padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-bottom: 1vh;
   font-family: var(--bodyFont);
   font-size: large;
   text-align: center;
@@ -576,9 +639,16 @@ margin-bottom: 0;
   align-items: center;
 }
 
+.ideasForm {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: auto;
+}
+
 /*newsletter*/
 .newsletter {
-  padding-top: 10vh;
+  padding-top: 5vh;
   padding-bottom: 10vh;
   font-family: var(--bodyFont);
   font-size: large;
@@ -678,7 +748,66 @@ transition: 0.3s;
 
 /*contact*/
 #hiddenPlaceMain {
-  padding-top: 15vh;
+  padding-top: 20vh;
   padding-bottom: 10vh;
 }
+
+
+/*404*/
+
+.lockedMobile {
+  display: none;
+}
+
+.lockedBig {
+  display: block;
+}
+
+
+
+.errorMain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 8%;
+  margin-bottom: 5%;
+  font-family: var(--bodyFont);
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: var(--white);
+  
+}
+
+.padlockImage{
+  width:35%;
+  height:60vh;
+  margin-left: 15%;
+}
+
+.errorRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 60vh;
+  width: 35%;
+  margin-right: 15%;
+}
+
+.errorDescription {
+  background-color: var(--lightRed);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  padding: 5vh;
+  text-align: center;
+  padding-bottom: 7vh;
+  font-size: large;
+}
+
 }

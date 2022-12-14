@@ -37,15 +37,15 @@
         <h1>HIDDEN PLACES</h1>
         <div class="description">
             <p>Hidden Places aims to help 
-                you get to know the more 
-                unusual, less visited places 
+                you get to know<br>the more 
+                unusual, less visited places<br>
                 in the local area.</p>
                 
                 <p>Explore the site to find new 
-                information, suggest places 
-                for us to discover and sign 
+                information,<br>suggest places 
+                for us to discover and<br>sign 
                 up for the newsletter so 
-                you don't miss out 
+                you<br> don't miss out 
                 on new content.</p>
         </div>
     </section>
@@ -54,16 +54,18 @@
         <h2>We create adventures based on your input</h2>
         <p>Share your suggestions of places to 
             discover in and around Hørning</p>
-            <form>
-                <input type="text" id="ideaName" name="ideaName" placeholder="Name" required><br>
-                <input type="text" id="ideaEmail" name="ideaEmail" placeholder="Email" required><br>
+            <form class="ideasForm">
+                <input type="text" id="ideaName" name="ideaName" placeholder="Name" required class="newsletterText"><br>
+                <input type="text" id="ideaEmail" name="ideaEmail" placeholder="Email" required class="newsletterText"><br>
                 <textarea id="idea" name="idea" placeholder="What hidden places would you like us to discover?" 
-                rows="10" columns="30" required></textarea><br>
+                rows="10" columns="30" required class="newsletterText"></textarea><br>
+                <div class="ideaTermsAndSubmit">
                 <div class="terms">
                     <label for="ideaTerms">Agree to how we use your data</label><br>
                     <input input type="checkbox" id="ideaTerms" name="ideaTerms" value="checked" required><br>
                 </div>
-            <input type="submit" value="Submit" id="submitIdea" class="button">
+                <input type="submit" value="Submit" id="submitIdea" class="button submitButton">
+                </div>
             </form>  
     </section>
 
