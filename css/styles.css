@@ -120,6 +120,50 @@
   margin-bottom: 3vh;
 }
 
+.boldEN {
+  font-weight: 550;
+}
+
+.noUndeline{
+  text-decoration: none;
+  color: #000000;
+}
+
+.mobileMenu {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: var(--bodyFont);
+  display: flex;
+  flex-direction: column;
+  row-gap: 4vh;
+  font-size: x-large;
+  color: #000000;
+  background-color: var(--lightGreen);
+  height: 92vh;
+  margin-top: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeMobileMenu {
+  font-size: xx-large;
+  color: #000000;
+  background-color: var(--lightGreen);
+  height: 10vh;
+  width: 35vw;
+  padding-top: 5vh; 
+  margin: 0;
+  text-align: center;
+  right: 0;
+  position: fixed;
+}
+
+.mobileMenuLogo {
+  border-radius: 0px 50px 0px 0px;
+}
+
 .mainVideoContainer {
   width: 100%;
   margin-bottom: 0;
