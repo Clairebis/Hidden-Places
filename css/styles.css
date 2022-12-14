@@ -54,6 +54,10 @@
   cursor: pointer;
 }
 
+.dataUnderline{
+  color: #000000;
+}
+
 .contactButton{
   margin: auto;
 }
@@ -523,7 +527,11 @@ padding-bottom: 7vh;
     display: none;
   }
 
-/*index main*/
+ .currentNav {
+  border-bottom: var(--darkGreen) 2px solid;
+ }
+ 
+  /*index main*/
 
 .mainVideoContainer{
 padding-bottom: 0;
@@ -561,6 +569,7 @@ margin-bottom: 0;
       font-weight: lighter;
     }
 
+
 /*hidden places*/
 .hiddenPlaces{
   padding-top: 10vh;
@@ -570,7 +579,7 @@ margin-bottom: 0;
   font-size: large;
   text-align: center;
   align-items: center;
-  margin-top: 2vh;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
