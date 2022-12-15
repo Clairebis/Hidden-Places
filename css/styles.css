@@ -780,10 +780,38 @@ transition: 0.3s;
     height: 40vh;
   }
   
-  .modalMain {
-    margin: 10% auto;
-    width: 40%;
-  }
+  
+.modalContent{
+  background-color: var(--lightRed);
+  margin: auto; /*centered*/
+  margin-top: 7%;
+  padding: 20px;
+  border-radius: 5px;
+  width: 33%; /* Could be more or less, depending on screen size */
+  height: 62%;
+  font-family: var(--bodyFont);
+  font-size: large;
+  text-align: center;
+}
+
+.modalHeading{
+  margin-top: 7vh;
+}
+
+.checkmark {
+  margin-bottom: 5vh;
+}
+
+.modalText {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.modalButton {
+  margin: auto;
+  margin-top: 5vh;
+}
+  
 
 .footer {
   padding-top: 10vh;

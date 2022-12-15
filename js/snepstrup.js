@@ -21,3 +21,11 @@ fetch(weatherApiUrl)
     result5.innerHTML = `<img src="http://openweathermap.org/img/wn/${data.weather[0].icon}.png" width="50px" height="50px" alt="weather icon">`;
     // result5.innerHTML = '<img src="http://openweathermap.org/img/wn/' + data.weather[0].icon + '.png" width="50px" height="50px" alt="weather icon">';
   });
+
+//modal window - newsletter
+const modal2 = document.getElementById("myModal2");
+const btn2 = document.getElementById("subscribeNewsletter");
+
+btn2.onclick = function () {
+  modal2.style.display = "block";
+};

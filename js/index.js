@@ -1,7 +1,7 @@
 //modal window - newsletter
-const modal2Main = document.getElementById("myModal2Main");
-const btn2Main = document.getElementById("subscribeNewsletterMain");
+const modal2 = document.getElementById("myModal2");
+const btn2 = document.getElementById("subscribeNewsletter");
 
-btn2Main.onclick = function () {
-  modal2Main.style.display = "block";
+btn2.onclick = function () {
+  modal2.style.display = "block";
 };
