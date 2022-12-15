@@ -17,6 +17,7 @@ fetch(weatherApiUrl)
     result.innerHTML += data.main.temp;
     result2.innerHTML += data.main.feels_like;
     result3.innerHTML += data.wind.speed;
-    result4.innerHTML = `<img src="http://openweathermap.org/img/wn/${data.weather[0].icon}.png" width="50px" height="50px" alt="">`;
-    // result4.innerHTML = '<img src="http://openweathermap.org/img/wn/' + data.weather[0].icon + '.png" width="50px" height="50px" alt="">';
+    result4.innerHTML += data.weather[0].main;
+    result5.innerHTML = `<img src="http://openweathermap.org/img/wn/${data.weather[0].icon}.png" width="50px" height="50px" alt="weather icon">`;
+    // result5.innerHTML = '<img src="http://openweathermap.org/img/wn/' + data.weather[0].icon + '.png" width="50px" height="50px" alt="weather icon">';
   });

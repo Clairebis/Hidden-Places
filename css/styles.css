@@ -878,7 +878,7 @@ transition: 0.3s;
   background-color: var(--lightRed);
   border-radius: 15px;
   width:28%;
-  height: 21vh;
+  height: 23vh;
   padding-left: 2vw;
   padding-right: 2vw;
   padding-top: 1vh;
@@ -900,6 +900,54 @@ justify-content: flex-start;
 .facilitiesHeading {
   margin-bottom: 0.5vh;
   margin-top: 1.5vh;
+}
+
+.weatherCard{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 0;
+  margin: 0;
+}
+
+.currentTemp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 12vw;
+}
+
+.feelsLike{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 12vw;
+}
+
+.windSpeed{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 12vw;
+}
+
+.weatherTypeAndImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 12vw;
+}
+
+.weatherIconContainer {
+  border-radius: 15px;
+  background-color: var(--darkGreen);
+  padding: 0;
+  margin: 0;
+  height: 4vh;
+}
+
+.weatherIcon {
+  padding-bottom: 1vh;
 }
 
 /*Gallery*/
