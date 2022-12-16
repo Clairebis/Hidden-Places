@@ -578,6 +578,14 @@ padding-bottom: 7vh;
  .currentNav {
   border-bottom: var(--darkGreen) 2px solid;
  }
+
+ .navLink:hover {
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.2);
+    z-index: 3;
+    overflow: hidden;
+  }
+ 
  
   /*index main*/
 

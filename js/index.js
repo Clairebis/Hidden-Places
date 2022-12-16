@@ -15,12 +15,13 @@ const centre = [10.03797, 56.0862];
 const snep = [9.87279, 55.98363];
 const jeksen = [9.98345, 56.10725];
 const mosen = [10.03025, 56.07744];
+const skanderborg = [9.93267, 56.0439];
 
 const map = new mapboxgl.Map({
   container: "map",
   style: "mapbox://styles/serendipity23/clbq8ou66001i15tc6d7sx22h",
-  center: centre,
-  zoom: 9,
+  center: skanderborg,
+  zoom: 10,
 });
 
 //map popup text
