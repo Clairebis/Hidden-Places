@@ -56,13 +56,21 @@ galleryImages.forEach(function (image, index) {
       newNextBtn.innerHTML = '<i class="fas fa-chevron-right next"></i>';
       container.appendChild(newNextBtn);
       newNextBtn.setAttribute("class", "img-btn-next");
-      newNextBtn.setAttribute("onclick", "changeImg(1)");
+
+      // newNextBtn.setAttribute("onclick", "changeImg(1)"); doesn't work
+      newNextBtn.addEventListener("click", () => {
+        changeImg(1);
+      });
 
       let newPrevBtn = document.createElement("a");
       newPrevBtn.innerHTML = '<i class="fas fa-chevron-left next"></i>';
       container.appendChild(newPrevBtn);
       newPrevBtn.setAttribute("class", "img-btn-prev");
-      newPrevBtn.setAttribute("onclick", "changeImg(0)");
+
+      // newPrevBtn.setAttribute("onclick", "changeImg(0)");  doesn't work
+      newPrevBtn.addEventListener("click", () => {
+        changeImg(0);
+      });
     };
   };
 });
@@ -76,7 +84,7 @@ function closeImg() {
 function changeImg(change) {
   document.querySelector("#current-img").remove();
 
-  let getImgWindow = document.querySelector("img-window");
+  let getImgWindow = document.querySelector(".img-window");
   let newImg = document.createElement("img");
   getImgWindow.appendChild(newImg);
 
@@ -99,3 +107,43 @@ function changeImg(change) {
 
   getLatestOpenedImg = calcNewImg;
 }
+
+//mapbox
+
+mapboxgl.accessToken =
+  "pk.eyJ1Ijoic2VyZW5kaXBpdHkyMyIsImEiOiJjbDlncWF4bDEwNjMxM29wYnoxaXJqbXhjIn0.09C_PS2VMnvU75LMolE_jg";
+
+const centre = [10.03797, 56.0862];
+const snep = [9.87279, 55.98363];
+const skanderborg = [9.93267, 56.0439];
+
+const map = new mapboxgl.Map({
+  container: "subMapContainer",
+  style: "mapbox://styles/serendipity23/clbq8ou66001i15tc6d7sx22h",
+  center: skanderborg,
+  zoom: 8,
+});
+
+//map popup text
+const popupHørning = new mapboxgl.Popup({ offset: 25 }).setText(
+  "Hørning town centre"
+);
+
+const popupSnep = new mapboxgl.Popup({ offset: 25 }).setText(
+  "Snepstrup Præstegård"
+);
+
+// create DOM elements (div) for the markers
+const hørningMarker = document.createElement("div");
+hørningMarker.id = "hørningMarker";
+
+const snepMarker = document.createElement("div");
+snepMarker.id = "snepMarker";
+
+// create the markers
+new mapboxgl.Marker(hørningMarker)
+  .setLngLat(centre)
+  .setPopup(popupHørning)
+  .addTo(map);
+
+new mapboxgl.Marker(snepMarker).setLngLat(snep).setPopup(popupSnep).addTo(map);

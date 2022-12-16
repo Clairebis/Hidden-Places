@@ -29,3 +29,44 @@ const btn2 = document.getElementById("subscribeNewsletter");
 btn2.onclick = function () {
   modal2.style.display = "block";
 };
+
+//mapbox
+
+mapboxgl.accessToken =
+  "pk.eyJ1Ijoic2VyZW5kaXBpdHkyMyIsImEiOiJjbDlncWF4bDEwNjMxM29wYnoxaXJqbXhjIn0.09C_PS2VMnvU75LMolE_jg";
+
+const centre = [10.03797, 56.0862];
+const jeksen = [9.98345, 56.10725];
+const dørup = [10.021825, 56.097912];
+
+const map = new mapboxgl.Map({
+  container: "subMapContainer",
+  style: "mapbox://styles/serendipity23/clbq8ou66001i15tc6d7sx22h",
+  center: dørup,
+  zoom: 10,
+});
+
+//map popup text
+const popupHørning = new mapboxgl.Popup({ offset: 25 }).setText(
+  "Hørning town centre"
+);
+
+const popupJeksen = new mapboxgl.Popup({ offset: 25 }).setText("Jeksen Dalen");
+
+// create DOM elements (div) for the markers
+const hørningMarker = document.createElement("div");
+hørningMarker.id = "hørningMarker";
+
+const jeksenMarker = document.createElement("div");
+jeksenMarker.id = "jeksenMarker";
+
+// create the markers
+new mapboxgl.Marker(hørningMarker)
+  .setLngLat(centre)
+  .setPopup(popupHørning)
+  .addTo(map);
+
+new mapboxgl.Marker(jeksenMarker)
+  .setLngLat(jeksen)
+  .setPopup(popupJeksen)
+  .addTo(map);
