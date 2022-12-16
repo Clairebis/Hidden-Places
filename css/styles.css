@@ -79,6 +79,10 @@
   display: none;
 }
 
+.downArrow {
+  display: none;
+}
+
 .navWrapper {
   display: fixed;
 }
@@ -403,14 +407,135 @@ transition: 0.3s;
   padding-top: 4vh;
 }
 
-
+/*subpages*/
 .subVideo {
   width: 100%;
+  height: 40vh;
+  object-fit: fill;
+  margin-bottom: 0;
 }
 
 .play {
   width: 10%;
   height: auto;
+}
+
+.subHiddenPlaces {
+  margin-top: 0;
+
+}
+
+.subDescription {
+  height: auto;
+}
+
+/*Destination Overview*/
+.destinationOverview{
+  font-family: var(--bodyFont);
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.destinationText {
+  text-align: center;
+}
+
+.cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 5vh;
+
+}
+
+.destinationCard{
+  background-color: var(--lightRed);
+  border-radius: 15px;
+  width: 75%;
+  height: auto;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  font-size: large;
+}
+
+.descriptionCard{
+  padding-top: 2vh;
+  text-align: center;
+}
+
+.facilitiesCard {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+}
+
+.facilitiesHeading {
+  margin-bottom: 0.5vh;
+  margin-top: 1.5vh;
+}
+
+#subMapContainer{
+  width: 100%;
+  height: 15vh;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-radius: 5px;
+}
+
+.coordinates {
+  text-align: right;
+}
+
+.weatherCard{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 0;
+  margin: 0;
+}
+
+.currentTemp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.feelsLike{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.windSpeed{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.weatherTypeAndImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.weatherIconContainer {
+  border-radius: 15px;
+  background-color: var(--darkGreen);
+  padding: 0;
+  margin: 0;
+  height: 6vh;
+}
+
+.weatherIcon {
+  padding-bottom: 1vh;
 }
 
 .gallery {
@@ -419,10 +544,64 @@ transition: 0.3s;
   flex-wrap: wrap;
 }
 
-.galleryImage {
+
+/*Gallery*/
+.snapshot {
+  font-family: var(--bodyFont);
+  text-align: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.galleryImageContainer {
   width: 50%;
   height: 33vh;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
 }
+
+.galleryImage{
+width: 100%;
+height: 100%;
+}
+
+/*testimonials*/
+.testimonials {
+  font-family: var(--bodyFont);
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+}
+
+.testimonial {
+  font-family: var(--testimonialFont);
+  font-size: large;
+  padding-bottom: 2vh;
+}
+
+.testimonialsHeader {
+  text-align: center;
+}
+
+.testimonial1{
+  margin-left: 5vw;
+}
+
+.testimonial2{
+  margin-left: 5vw;
+}
+
+.testimonial3{
+  margin-left: 5vw;
+}
+
+/*Next Adventure*/
+.yourNextAdventure{
+  font-family: var(--bodyFont);
+  padding-top: 8vh;
+  text-align: center;
+}
+
 
  #myModal {
     display: none;
@@ -929,6 +1108,7 @@ transition: 0.3s;
 }
 
 .downArrow {
+  display: block;
   width: 4vw;
   margin-left: 47.5vw;
   padding-bottom: 3vh;
