@@ -1,9 +1,15 @@
-//modal window - newsletter
+//modal window - newsletter & validation
 const modal2 = document.getElementById("myModal2");
-const btn2 = document.getElementById("subscribeNewsletter");
+const subscribeNewsletterBtn = document.getElementById("subscribeNewsletter");
 
-btn2.onclick = function () {
-  modal2.style.display = "block";
+subscribeNewsletterBtn.onclick = function () {
+  const newsletterForm = document.getElementById("formNewsletter");
+
+  if (newsletterForm.checkValidity()) {
+    modal2.style.display = "block";
+  } else {
+    newsletterForm.reportValidity();
+  }
 };
 
 //mapbox

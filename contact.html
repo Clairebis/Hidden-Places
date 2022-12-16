@@ -35,7 +35,7 @@
 
     <section class="hiddenPlaces darkGreen" id="hiddenPlaceMain">
         <h1>HIDDEN PLACES</h1>
-        <div class="description">
+        <div class="description contactDescription">
             <p>Hidden Places aims to help 
                 you get to know<br>the more 
                 unusual, less visited places<br>
@@ -54,7 +54,7 @@
         <h2>We create adventures based on your input</h2>
         <p>Share your suggestions of places to 
             discover in and around Hørning</p>
-            <form class="ideasForm">
+            <form class="ideasForm" id="ideasForm">
                 <input type="text" id="ideaName" name="ideaName" placeholder="Name" required class="newsletterText"><br>
                 <input type="text" id="ideaEmail" name="ideaEmail" placeholder="Email" required class="newsletterText"><br>
                 <textarea id="idea" name="idea" placeholder="What hidden places would you like us to discover?" 
@@ -64,7 +64,7 @@
                     <label for="ideaTerms">Agree to how we <a href="404.html"><span class="dataUnderline">use your data</span></a></label><br>
                     <input input type="checkbox" id="ideaTerms" name="ideaTerms" value="checked" required><br>
                 </div>
-                <input type="submit" value="Submit" id="submitIdea" class="button submitButton">
+                <input type="button" value="Submit" id="submitIdea" class="button submitButton">
                 </div>
             </form>  
     </section>
@@ -96,7 +96,7 @@
         notified when we share details 
         of a new hidden place</p>
     
-     <form class="formNewsletter">
+     <form id="formNewsletter" class="formNewsletter">
         <input type="text" id="name" name="name" placeholder="Name" required class="newsletterText"><br>
         <div class="emailAndTerms">
             <input type="email" id="email" name="email" placeholder="Email" required class="newsletterText"><br>
@@ -106,7 +106,7 @@
                 <span class="checkbox"></span> 
             </div>
         </div>
-    <input type="submit" value="Submit" class="button submitButton" id="subscribeNewsletter">
+    <input type="button" value="Submit" class="button submitButton" id="subscribeNewsletter">
     </form>  
 </section>
 

@@ -1,15 +1,27 @@
-//modal window - newsletter
+//modal window - newsletter & validation
 const modal2 = document.getElementById("myModal2");
-const btn2 = document.getElementById("subscribeNewsletter");
+const subscribeNewsletterBtn = document.getElementById("subscribeNewsletter");
 
-btn2.onclick = function () {
-  modal2.style.display = "block";
+subscribeNewsletterBtn.onclick = function () {
+  const newsletterForm = document.getElementById("formNewsletter");
+
+  if (newsletterForm.checkValidity()) {
+    modal2.style.display = "block";
+  } else {
+    newsletterForm.reportValidity();
+  }
 };
 
 //modal window - idea
 const modal = document.getElementById("myModal");
-const btn1 = document.getElementById("submitIdea");
+const submitIdea = document.getElementById("submitIdea");
 
-btn1.onclick = function () {
-  modal.style.display = "block";
+submitIdea.onclick = function () {
+  const ideasForm = document.getElementById("ideasForm");
+
+  if (ideasForm.checkValidity()) {
+    modal.style.display = "block";
+  } else {
+    ideasForm.reportValidity();
+  }
 };
