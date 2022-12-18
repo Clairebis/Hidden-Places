@@ -84,7 +84,7 @@
 }
 
 .navWrapper {
-  display: fixed;
+  position: fixed;
 }
 
 .mobileNav {
@@ -1128,7 +1128,7 @@ transition: 0.3s;
 
 .subHiddenPlaces {
   width: 35%;
-  height: 50;
+  height: 50%;
   margin-right: 15%;
   margin-top: 0;
   border-radius: 0px 5px 5px 0px;
