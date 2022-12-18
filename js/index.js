@@ -36,13 +36,15 @@ const popupHørning = new mapboxgl.Popup({ offset: 25 }).setText(
 );
 
 const popupSnep = new mapboxgl.Popup({ offset: 25 }).setText(
-  "Snepstrup Præstegård"
+  "Snepstrup Præstegård, Snepstrupvej 4, 8660 Skanderborg"
 );
 
-const popupJeksen = new mapboxgl.Popup({ offset: 25 }).setText("Jeksen Dalen");
+const popupJeksen = new mapboxgl.Popup({ offset: 25 }).setText(
+  "Jeksen Dalen, Jeksendalen Parkering, Kollens Møllevej"
+);
 
 const popupMosen = new mapboxgl.Popup({ offset: 25 }).setText(
-  "Naturcenter Mosehuset"
+  "Naturcenter Mosehuset, Fregerslevvej 24, 8362 Hørning"
 );
 
 // create DOM elements (div) for the markers
