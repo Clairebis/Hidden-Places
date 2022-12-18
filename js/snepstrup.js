@@ -4,7 +4,7 @@ vid.controls = true;
 
 //Weather url
 const weatherApiUrl =
-  "http://api.openweathermap.org/data/2.5/weather?q=Tebstrup&lang=en&units=metric&appid=4969d2cea5e00ba3e5d664ee8fb7ac33";
+  "https://api.openweathermap.org/data/2.5/weather?q=Tebstrup&lang=en&units=metric&appid=4969d2cea5e00ba3e5d664ee8fb7ac33";
 
 // fetch weather sample
 fetch(weatherApiUrl)
@@ -18,8 +18,8 @@ fetch(weatherApiUrl)
     result2.innerHTML += data.main.feels_like;
     result3.innerHTML += data.wind.speed;
     result4.innerHTML += data.weather[0].main;
-    result5.innerHTML = `<img src="http://openweathermap.org/img/wn/${data.weather[0].icon}.png" width="50px" height="50px" alt="weather icon">`;
-    // result5.innerHTML = '<img src="http://openweathermap.org/img/wn/' + data.weather[0].icon + '.png" width="50px" height="50px" alt="weather icon">';
+    result5.innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0].icon}.png" width="50px" height="50px" alt="weather icon">`;
+    // result5.innerHTML = '<img src="https://openweathermap.org/img/wn/' + data.weather[0].icon + '.png" width="50px" height="50px" alt="weather icon">';
   });
 
 //modal window - newsletter & validation

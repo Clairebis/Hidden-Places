@@ -811,12 +811,14 @@ margin-bottom: 0;
     position: absolute;
     top: 13vh;
     left: 0;
+    z-index: 2;
   }
 
   .overlay {
-    height: 80vh;
+    height: 60vh;
     padding-bottom: 0;
     margin-bottom: 0;
+    z-index: 3;
   }
 
  
@@ -835,9 +837,19 @@ margin-bottom: 0;
     }
 
 
+.pointerDown{
+  width: 2vw;
+  height: 2vw;
+  background-color: var(--white);
+  transform: rotate(45deg);
+  padding-top: 0;
+  margin-top: 0;
+  margin: auto;
+}
+
 /*hidden places*/
 .hiddenPlaces{
-  padding-top: 10vh;
+  padding-top: 0vh;
   padding-bottom: 15vh;
   color: var(--white);
   font-family: var(--bodyFont);
@@ -846,6 +858,10 @@ margin-bottom: 0;
   align-items: center;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.hiddenPlacesHeader{
+  padding-top: 10vh;
 }
 
 .description{
