@@ -7,12 +7,6 @@
     --errorColour:#f00e0e;
     --bodyFont: "Roboto", Arial, Helvetica, sans-serif;
     --testimonialFont: "MV Boli";
-    
-    --font-size-heading: 2.9vw;
-    --font-size-subheading: 1.5vw;
-    --font-size-bodytext: 1.2vw;
-    --font-size-nav: 50px;
-    --font-size-nav-active: 60px;
   }
   
   body {
