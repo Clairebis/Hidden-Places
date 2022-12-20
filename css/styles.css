@@ -1202,8 +1202,9 @@ transition: 0.3s;
   font-size: large;
 }
 
-.descriptionCard{
-  padding-top: 2vh;
+.descriptionCard {
+  padding-top: 1vh;
+  text-align: left;
 }
 
 .facilitiesCard {

@@ -80,6 +80,12 @@ galleryImages.forEach(function (image, index) {
       newPrevBtn.addEventListener("click", () => {
         changeImg(0);
       });
+
+      let newCloseBtn = document.createElement("div");
+      newCloseBtn.innerHTML = "<div>X</div>";
+      container.appendChild(newCloseBtn);
+      newCloseBtn.setAttribute("class", "galleryClose");
+      newCloseBtn.setAttribute("onclick", "closeImg()");
     };
   };
 });
@@ -88,6 +94,7 @@ function closeImg() {
   document.querySelector(".img-window").remove();
   document.querySelector(".img-btn-next").remove();
   document.querySelector(".img-btn-prev").remove();
+  document.querySelector(".galleryClose").remove();
 }
 
 function changeImg(change) {
