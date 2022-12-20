@@ -1354,10 +1354,26 @@ width: 100%;
   cursor: pointer;
 }
 
-.img-btn-next:hover, .img-btn-prev:hover {
+.img-btn-next:hover, .img-btn-prev:hover, .galleryClose:hover {
   background-color: var(--darkGreen);
   transition: 0.2s ease-out;
 }
+
+.galleryClose {
+  font-family: var(--bodyFont);
+  font-size: xx-large;
+  top: 2vh;
+  right: 0;
+  position: fixed;
+  z-index: 10;
+  color: var(--white);
+  background-color: var(--black);
+  width: 5vw;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 
 /*testimonials*/
 .testimonials {
